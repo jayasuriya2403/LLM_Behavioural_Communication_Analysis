@@ -1,6 +1,4 @@
-# Vellei AI Interview Assessment Module
-
-A complete FastAPI prototype for **LLM-based behavioural & communication analysis** of interview transcripts.
+# LLM_Behavioural_Communication_Analysis_Task
 
 This implementation follows the supplied task workflow:
 
@@ -46,14 +44,6 @@ This implementation follows the supplied task workflow:
 - Prompt versioning
 - Demo script
 
-## Safety / grounding
-
-The system only evaluates information observable from transcript content. It does **not** diagnose personality, psychology, medical conditions, or mental health. It does not infer facial expressions, body language, or voice characteristics from text.
-
-If evidence is insufficient, the system returns **Limited Evidence** rather than inventing an assessment.
-
-The final hiring decision remains with an authorized human decision-maker.
-
 ## Requirements
 
 - Python 3.11+
@@ -76,15 +66,6 @@ nomic-embed-text
 cd vellei_interview_assessment
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-### Linux/macOS
-
-```bash
-cd vellei_interview_assessment
-python3 -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -177,50 +158,6 @@ curl -X POST http://127.0.0.1:8000/api/v1/analyze \
   -d @data/samples/strong_candidate.json
 ```
 
-## Project structure
-
-```text
-vellei_interview_assessment/
-├── app/
-│   ├── api/
-│   │   └── routes.py
-│   ├── core/
-│   │   └── config.py
-│   ├── db/
-│   │   └── database.py
-│   ├── models/
-│   │   └── analysis.py
-│   ├── schemas/
-│   │   └── analysis.py
-│   ├── services/
-│   │   ├── transcript_processor.py
-│   │   ├── qa_extractor.py
-│   │   ├── communication_analyzer.py
-│   │   ├── behavioral_analyzer.py
-│   │   ├── evidence_engine.py
-│   │   ├── scoring_engine.py
-│   │   ├── llm_service.py
-│   │   ├── pipeline.py
-│   │   └── report_generator.py
-│   ├── prompts/
-│   │   ├── v1_system.txt
-│   │   └── v1_analysis_schema.json
-│   ├── templates/
-│   │   ├── candidate_report.html
-│   │   └── recruiter_report.html
-│   └── main.py
-├── data/samples/
-├── docs/
-│   ├── architecture.md
-│   ├── scoring_methodology.md
-│   ├── limitations.md
-│   └── demo_script.md
-├── reports/
-├── tests/
-├── requirements.txt
-└── README.md
-```
-
 ## Scoring methodology
 
 Every communication dimension is scored 1–10.
@@ -259,20 +196,3 @@ The test suite covers:
 - API flow
 - report generation
 
-## Demo
-
-See `docs/demo_script.md`.
-
-The demo can be completed through the browser UI and Swagger interface. A live demonstration satisfies the demonstration requirement; the project also includes a ready-to-record demo script.
-
-## Future enhancements
-
-- PostgreSQL for production deployments
-- Authentication and role-based access
-- Background jobs for large transcripts
-- Multi-agent architecture after MVP stabilization
-- Audio transcription input
-- Retrieval over historical interview evidence
-- Human-review and audit workflow
-- Bias/fairness evaluation across controlled test sets
-- Enterprise retention and deletion policies
