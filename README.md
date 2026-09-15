@@ -1,4 +1,4 @@
-# LLM_Behavioural_Communication_Analysis_Task
+# LLM_Behavioural_Communication_Analysis
 
 This implementation follows the supplied task workflow:
 
