@@ -1,0 +1,5 @@
+Interviewer: Describe a situation where you solved a difficult problem.
+Candidate: In my previous company, a customer report was failing during peak hours. My task was to identify why it happened. I checked the logs, reproduced the issue, discussed options with my colleague, and changed the query. The result was a stable report and fewer failures.
+
+Interviewer: Describe a disagreement with a teammate.
+Candidate: During a release, my teammate and I disagreed about which feature should come first. I listened to the requirements, explained my concern, and suggested a smaller release. We agreed on the plan and delivered it together.

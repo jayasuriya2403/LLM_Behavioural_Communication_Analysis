@@ -1,0 +1,8 @@
+Interviewer: Tell me about a challenging project you worked on.
+Candidate: In my previous company, I worked on an e-commerce project. We had a performance problem. My task was to identify the bottleneck. I reviewed the logs, discussed the issue with the team, and implemented caching. The result was faster response time and fewer complaints.
+
+Interviewer: Tell me about a conflict with a colleague.
+Candidate: We had a disagreement about priorities. I first listened to the concern, then compared the requirements and explained my reasoning. We agreed on a smaller first release and delivered it together.
+
+Interviewer: How do you learn a new technology?
+Candidate: I start with the documentation, build a small example, and then apply it to a practical problem. Recently I learned an API framework and used it in a small project.

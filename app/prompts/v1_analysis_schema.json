@@ -1,0 +1,109 @@
+{
+  "question_answers": [
+    {
+      "question_id": "Q1",
+      "question": "Exact interviewer question",
+      "answer_id": "A1",
+      "answer": "Exact candidate answer"
+    }
+  ],
+  "communication": {
+    "clarity": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "relevance": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "responsiveness": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "structure": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "conciseness": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "articulation": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "professional_communication": {
+      "score": 1,
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "confidence": 0.0,
+      "limitation": null
+    },
+    "overall_score": 1.0
+  },
+  "behavioral_indicators": [
+    {
+      "indicator": "problem solving",
+      "assessment": "Assessment grounded only in transcript evidence",
+      "evidence": "Concise quote or faithful summary",
+      "source_question_id": "Q1",
+      "confidence": 0.0,
+      "evidence_status": "Limited Evidence",
+      "limitation": null
+    }
+  ],
+  "filler_analysis": {
+    "counts": {
+      "um": 0,
+      "uh": 0,
+      "actually": 0,
+      "basically": 0,
+      "like": 0,
+      "you know": 0,
+      "I mean": 0
+    },
+    "total_filler_words": 0,
+    "repeated_phrases": []
+  },
+  "star_analysis": [
+    {
+      "question_id": "Q1",
+      "applicable": false,
+      "situation": null,
+      "task": null,
+      "action": null,
+      "result": null,
+      "missing_components": []
+    }
+  ],
+  "strengths": [
+    "Transcript-grounded candidate strength"
+  ],
+  "improvement_areas": [
+    "Transcript-grounded improvement area"
+  ],
+  "limitations": [
+    "Limitations caused by available transcript evidence"
+  ],
+  "overall_score": 1.0,
+  "recommendation_support": "Human review required; do not make a final hiring decision.",
+  "generated_by": "llm"
+}

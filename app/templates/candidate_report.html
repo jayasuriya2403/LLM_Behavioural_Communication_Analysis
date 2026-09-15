@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Candidate Report</title>
+<style>body{font-family:Arial;max-width:900px;margin:35px auto;line-height:1.5} .card{border:1px solid #ddd;padding:16px;margin:12px 0;border-radius:8px} .score{font-size:28px;font-weight:bold} li{margin:7px 0}</style>
+</head><body>
+<h1>Candidate Interview Feedback</h1>
+<p>This report is constructive feedback based only on the supplied interview transcript.</p>
+<div class="card"><div class="score">{{ "%.2f"|format(result.overall_score) }}/10</div><div>Overall communication score</div></div>
+<h2>Strengths</h2><ul>{% for x in result.strengths %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>Improvement Areas</h2><ul>{% for x in result.improvement_areas %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>Communication</h2>
+{% for name, item in {
+"Clarity": result.communication.clarity,
+"Relevance": result.communication.relevance,
+"Responsiveness": result.communication.responsiveness,
+"Structure": result.communication.structure,
+"Conciseness": result.communication.conciseness,
+"Articulation": result.communication.articulation,
+"Professional Communication": result.communication.professional_communication
+}.items() %}
+<div class="card"><b>{{name}}: {{item.score}}/10</b><p>{{item.assessment}}</p><p><b>Evidence:</b> {{item.evidence}}</p></div>
+{% endfor %}
+<h2>Practical Guidance</h2>
+<ul><li>Use a clear Situation → Task → Action → Result structure for behavioural questions.</li><li>Lead with the direct answer before adding supporting detail.</li><li>Use specific actions and measurable outcomes where the experience allows it.</li></ul>
+<h2>Limitations</h2><ul>{% for x in result.limitations %}<li>{{x}}</li>{% endfor %}</ul>
+</body></html>
