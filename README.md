@@ -32,17 +32,13 @@ This implementation follows the supplied task workflow:
 - Optional STAR analysis for behavioural questions
 - Evidence for important assessments
 - Confidence/evidence strength and limitations
-- Documented 1–10 scoring rubric
+- Documented 1–10 scoring 
 - LLM structured JSON output using Ollama
 - LLM-only analysis: Ollama/Llama 3.2 is required
 - SQLite persistence
 - Candidate-facing and recruiter-facing reports
 - REST API + lightweight web UI
 - Sample transcripts
-- Automated tests
-- Architecture diagram
-- Prompt versioning
-- Demo script
 
 ## Requirements
 
